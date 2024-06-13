@@ -8,16 +8,6 @@ html {
   block-size: 100%;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-}
-
 h1,
 h2,
 h3,
@@ -35,4 +25,56 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.page {
+  display: flex;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-end;
+  margin: auto;
+  max-inline-size: 1140px;
+  inline-size: 100%;
+}
+
+.result {
+  inline-size: 100%;
+}
+
+.result__video-container {
+  max-inline-size: 711px;
+  max-block-size: 386px;
+}
+
+.result__video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.content__list {
+  overflow: auto;
+  max-block-size: 534px;
+}
+
+.content__details {
+  max-inline-size: 399px;
+  inline-size: 100%;
 }
