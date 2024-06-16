@@ -55,6 +55,7 @@ a {
 }
 
 .result__video-container {
+  position: relative;
   box-sizing: border-box;
   margin-bottom: 16px;
   overflow: hidden;
@@ -96,6 +97,7 @@ a {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
