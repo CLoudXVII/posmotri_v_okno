@@ -27,8 +27,16 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .page {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -40,41 +48,86 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
   align-items: flex-end;
-  margin: auto;
   max-inline-size: 1140px;
   inline-size: 100%;
 }
 
-.result {
-  inline-size: 100%;
-}
-
 .result__video-container {
-  max-inline-size: 711px;
-  max-block-size: 386px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  overflow: hidden;
+  inline-size: 711px;
+  block-size: 386px;
 }
 
 .result__video {
+  object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .search-form {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
 }
 
-.content__list {
-  overflow: auto;
-  max-block-size: 534px;
-}
-
 .content__details {
   max-inline-size: 399px;
+  max-block-size: 534px;
   inline-size: 100%;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 75px;
+  font-style: normal;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  overflow: auto;
+  max-block-size: 298px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.content__video-card-thumbnail {
+  max-inline-size: 194px;
 }
