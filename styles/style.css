@@ -146,6 +146,12 @@ fieldset {
   outline-offset: 1px;
 }
 
+/* Отступы для выравнивания рамки */
+
+.search-form__label:has(.search-form__pseudo-checkbox) {
+  padding: 0 5px;
+}
+
 .search-form__textfield {
   border-top: 1px solid #fff;
   border-right: none;
@@ -177,7 +183,7 @@ fieldset {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 17px;
+  gap: 5px;
 }
 
 .search-form__pseudo-checkbox {
@@ -200,10 +206,12 @@ fieldset {
 }
 
 .search-form__label-text {
+  display: inline-block;
   color: #FFFFFF;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  vertical-align: middle;
   font-style: normal;
   line-height: 22px;
 }
@@ -244,6 +252,12 @@ fieldset {
   row-gap: 30px;
   overflow: auto;
   block-size: 298px;
+}
+
+/* Фикс для двойного gap после нажатия кнопки показать ещё */
+
+.content__list li:empty{
+  display: none;
 }
 
 .content__card-link {
