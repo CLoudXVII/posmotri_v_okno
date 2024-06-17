@@ -79,6 +79,7 @@ fieldset {
 
 .result__video {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -86,7 +87,7 @@ fieldset {
 .button {
   border: 1px solid #fff;
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -128,7 +129,7 @@ fieldset {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -150,8 +151,9 @@ fieldset {
   border-right: none;
   border-bottom: 1px solid #fff;
   padding: 3px 0;
+  outline: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -159,7 +161,6 @@ fieldset {
   background-color: transparent;
   inline-size: 100%;
   appearance: none;
-  outline: none;
 }
 
 .search-form__textfield::placeholder {
@@ -200,7 +201,7 @@ fieldset {
 
 .search-form__label-text {
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -224,7 +225,7 @@ fieldset {
 
 .title {
   margin-bottom: 26px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -279,9 +280,9 @@ fieldset {
 }
 
 .content__video-card-description-container {
+  text-decoration: inherit;
   max-inline-size: 186px;
   inline-size: 100%;
-  text-decoration: inherit;
 }
 
 .content__video-card-title {
@@ -289,27 +290,27 @@ fieldset {
   margin-bottom: 6px;
   overflow: hidden;
   color: #FFF;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
   line-height: 100%;
+  text-decoration: inherit;
   text-transform: uppercase;
   text-overflow: ellipsis;
   max-inline-size: inherit;
-  text-decoration: inherit;
 }
 
 .content__video-card-description {
   display: block;
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed',sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 16px;
-  max-inline-size: inherit;
   text-decoration: inherit;
+  max-inline-size: inherit;
 }
 
 .content__video-card-thumbnail {
@@ -317,7 +318,7 @@ fieldset {
 }
 
 .more-button {
+  margin: 2px;
   padding: 6px 0;
   inline-size: calc(100% - 4px);
-  margin: 2px;
 }
